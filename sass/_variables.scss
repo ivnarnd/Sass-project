@@ -1,2 +1,17 @@
 $primary:blue !default; //default es para decirle que la variable puede cambiar su valor en el futuro
 $secondary:yellow;
+$global:Arial;
+body{
+    $global:cursive;
+    $font:Arial;
+    font-family: $global;
+    h1{
+        //Esta variables $font si podra ser utilizada desde este lugar pero no fuera del bloque de body
+        font-family: $font;
+    }
+}
+
+h2{
+    //este tomara el valor de la variable global que tiene definido Arial
+    font-family: $global;
+}

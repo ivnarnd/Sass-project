@@ -1,4 +1,15 @@
 body {
+  font-family: cursive;
+}
+body h1 {
+  font-family: Arial;
+}
+
+h2 {
+  font-family: Arial;
+}
+
+body {
   background-color: yellow;
 }
 
