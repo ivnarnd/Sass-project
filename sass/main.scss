@@ -1,3 +1,6 @@
-$primary:blue;
+@use 'variables' with (
+    $primary:yellow,
+    // $secondary:blue en este caso no se podria hacer esto
+);
 body  {
-background-color: $primary;}
+    background-color: variables.$primary;}
