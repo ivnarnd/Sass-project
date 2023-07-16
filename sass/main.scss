@@ -2,5 +2,15 @@
     $primary:yellow,
     // $secondary:blue en este caso no se podria hacer esto
 );
+$selector:'.hero';
+$valor:'flex';
+$propiedad:'display';
+
+//Interpolacion de variables 
+#{$selector}{
+    background-color: red;
+    #{$propiedad}: #{$valor};
+
+}
 body  {
     background-color: variables.$primary;}
